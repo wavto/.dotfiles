@@ -1,4 +1,7 @@
+# install needed homebrew tap
+
 brew tap caskroom/cask
+brew tap caskroom/versions
 brew tap homebrew/apache
 brew tap homebrew/completions
 brew tap homebrew/core

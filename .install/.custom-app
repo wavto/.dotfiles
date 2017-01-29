@@ -1,0 +1,14 @@
+###############################################################################
+# iTerm 2                                                                     #
+###############################################################################
+
+# Set custom folder for preferences
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string ~/.iterm/
+
+###############################################################################
+# Sublime Text                                                                #
+###############################################################################
+
+# Create Sublime Text settings symlink (remove directory first)
+rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+ln -s ~/.sublime/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User

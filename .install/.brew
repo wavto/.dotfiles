@@ -1,0 +1,74 @@
+# apps to install
+
+apps =(
+	autoconf
+	brew-cask-completion
+	composer
+	cowsay
+	dnsmasq
+	drupalconsole
+	drush
+	fortune
+	freetype
+	gdbm
+	gettext
+	git
+	gmp
+	gnutls
+	httpd24
+	icu4c
+	imagemagick
+	jpeg
+	libpng
+	libtasn1
+	libtiff
+	libtool
+	libxml2
+	libyaml
+	mysql
+	nettle
+	node
+	openssl
+	pandoc
+	pcre
+	php70
+	php70-apcu
+	php70-opcache
+	php70-xdebug
+	php70-yaml
+	pkg-config
+	python
+	rbenv
+	readline
+	ruby-build
+	sqlite
+	ssh-copy-id
+	symfony-installer
+	tree
+	unixodbc
+	wp-cli
+	wpcli-completion
+	xz
+	zlib
+	zsh-completions
+)
+
+
+# old apps (not needed until now)
+
+	# apr
+	# apr-util
+	# dos2unix
+	# mono
+	# php56
+	# php56-apcu
+	# php56-intl
+	# php56-opcache
+	# php56-xdebug
+	# php56-yaml
+	# subversion
+
+
+# run the installation
+
+brew install "${apps[@]}"

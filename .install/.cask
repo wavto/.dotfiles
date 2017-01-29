@@ -1,0 +1,36 @@
+# apps to install
+
+apps=(
+	1password
+	basictex
+	dropbox
+	filezilla
+	firefox
+	firefoxdeveloperedition
+	ganttproject
+	google-chrome
+	google-chrome-canary
+	google-drive
+	iterm2
+	java
+	jetbrains-toolbox
+	mysqlworkbench
+	openoffice
+	opera
+	parallels-desktop
+	poedit
+	sequel-pro
+	skype
+	spotify
+	sublime-text
+	teamviewer
+	visual-studio-code
+	yed
+	qlmarkdown
+	quicklook-json
+)
+
+
+# run the installation
+
+brew cask install "${apps[@]}"

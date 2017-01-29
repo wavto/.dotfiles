@@ -1,6 +1,6 @@
 # .dotfiles
 
-This is my dotfile repository. The repository is made to be installed directly within the $HOME directory of a mac.
+This is my dotfiles repository. The repository has to be installed directly within the $HOME directory of a macOS environment.
 
 ---
 
@@ -28,10 +28,18 @@ Initialize and update the submodules
 
 ## Setup a new mac
 
-If you are setting up a new mac run the installation script and restart your computer
+If you are setting up a new mac run this two commands first...
+
+	sudo softwareupdate -i -a
+	xcode-select --install
+
+...then the installation script...
 
 	./.install/.install
 
+...or run each script in the `.install/` directory manually...
+
+...and restart your mac
 
 ---
 
