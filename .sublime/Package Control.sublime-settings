@@ -1,0 +1,16 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Dictionaries",
+		"GitGutter",
+		"Markdown Preview",
+		"Monokai Extended",
+		"Package Control",
+		"Pandoc",
+		"Solarized Color Scheme"
+	]
+}

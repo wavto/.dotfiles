@@ -1,0 +1,11 @@
+[
+	{ "keys": ["super+m"], "command": "markdown_preview", "args": {"target": "browser", "parser": "github"} },
+	{ "keys": ["super+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["super+alt+down"], "command": "duplicate_line" },
+	{ "keys": ["super+alt+up"], "command": "duplicate_line" },
+	{ "keys": ["alt+up"], "command": "swap_line_up" },
+	{ "keys": ["alt+down"], "command": "swap_line_down" },
+	{ "keys": ["super+7"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["super+alt+7"], "command": "toggle_comment", "args": { "block": true } },
+	{ "keys": ["alt+shift+f"], "command": "reindent", "args": { "single_line": false } }
+]
