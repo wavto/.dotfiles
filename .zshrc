@@ -20,8 +20,12 @@ export PATH=/usr/local/texbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/
 
 # source external config
 source $ZSH/oh-my-zsh.sh
-source ~/.alias
-source ~/.function
+
+# source the shell dotfiles
+for file in ~/.{alias,function}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
 # add drupal completion
 source "$HOME/.console/console.rc" 2>/dev/null
