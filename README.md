@@ -24,6 +24,8 @@ Initialize and update the submodules
 
 	git submodule update --init --recursive
 
+Set your git credentials by copying `.gitconfig.local.sample` to `.gitconfig.local` and editing it
+
 ---
 
 ## Setup a new mac

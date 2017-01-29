@@ -1,7 +1,6 @@
 # This is Git's per-user configuration file.
-[user]
-	name = Dave Avanthay
-	email = dave@avanthay.ch
+[include]
+	path = ~/.gitconfig.local
 [push]
 	default = matching
 [core]
