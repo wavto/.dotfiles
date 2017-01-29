@@ -1,6 +1,6 @@
 # apps to install
 
-apps =(
+apps=(
 	autoconf
 	brew-cask-completion
 	composer
