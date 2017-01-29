@@ -1,6 +1,8 @@
 # .dotfiles
 
-This is my dotfile repository. The repository is made to be installed directly within the $HOME directory.
+This is my dotfile repository. The repository is made to be installed directly within the $HOME directory of a mac.
+
+---
 
 ## Installation
 
@@ -22,6 +24,15 @@ Initialize and update the submodules
 
 	git submodule update --init --recursive
 
+---
+
+## Setup a new mac
+
+If you are setting up a new mac run the installation script and restart your computer
+
+	./.install/.install
 
 
-You are free to use my dotfile repository, ideally you go throught the setting instead of copying my repos as is. The usage is at your own risk!
+---
+
+Feel free to use my dotfile repository, ideally you go throught the settings instead of just copying my repos as it is. The usage of this repository is at your own risk!
