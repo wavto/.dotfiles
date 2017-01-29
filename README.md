@@ -43,4 +43,18 @@ If you are setting up a new mac run this two commands first...
 
 ---
 
+## Usage
+
 Feel free to use my dotfile repository, ideally you go throught the settings instead of just copying my repos as it is. The usage of this repository is at your own risk!
+
+---
+
+## Credits
+
+* Nicola Paolucci and his article [The best way to store your dotfiles: A bare Git repository](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
+* Mathias Bynens and his [dotfile repository](https://github.com/mathiasbynens/dotfiles)
+* Chris Arcand and his article [Sublime Text Settings and Dotfiles](https://chrisarcand.com/sublime-text-settings-and-dotfiles/)
+* Kevin Suttle and his [great macOS Defaults documentation](https://github.com/kevinSuttle/macOS-Defaults)
+* Lars Kappert and his [dotfile repository](https://github.com/webpro/dotfiles)
+* Henrik Gustafsson and his [answer to a post about submodules on stackoverflow](https://stackoverflow.com/questions/1030169/easy-way-pull-latest-of-all-submodules#answer-1032653)
+* Simon Owen and his article [Setting Up a Mac Dev Machine From Zero to Hero With Dotfiles](https://code.tutsplus.com/tutorials/setting-up-a-mac-dev-machine-from-zero-to-hero-with-dotfiles--net-35449)
