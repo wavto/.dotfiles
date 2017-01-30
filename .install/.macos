@@ -2,7 +2,8 @@
 
 # this script is copied from https://mths.be/macos and adapted for my needs
 
-COMPUTER_NAME="daves-mac"
+# get exported COMPUTER_NAME if set, default 'daves-mac' else
+COMPUTER_NAME="${COMPUTER_NAME:-daves-mac}"
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
