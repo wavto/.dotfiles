@@ -35,7 +35,7 @@ If you are setting up a new mac run this two commands first...
 	sudo softwareupdate -i -a
 	xcode-select --install
 
-...define the computer name...
+...follow the [installation instruction above](#installation) and define the computer name...
 	
 	export COMPUTER_NAME=my-awesome-computer-name
 
@@ -46,6 +46,19 @@ If you are setting up a new mac run this two commands first...
 ...or run each script in the `.install/` directory manually...
 
 ...and restart your mac
+
+---
+
+## Configure Sublime Text settings
+
+First install the package control as [described here](https://packagecontrol.io/installation) by pasting the following into the sublime console
+
+	import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+
+Then run the following commands to remove the settings directory and symlink it to ´~/.sublime` instead
+
+	rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+	ln -s ~/.sublime/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
 ---
 
