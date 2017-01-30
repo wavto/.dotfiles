@@ -2,6 +2,7 @@
 	"user": {
 		"pandoc-path": "/usr/local/bin/pandoc",
 		"transformations": {
+
 			"PDF": {
 				"scope": {
 					"text.html": "html",
@@ -9,16 +10,45 @@
 				},
 				"pandoc-arguments": [
 					"-t", "pdf",
-					"--latex-engine=/usr/local/texbin/pdflatex"
-		          // use --latex-engine=engine where engine is
-		          // pdflatex|lualatex|xelatex. This may need to be specified with a
-		          // full path, e.g. on a mac with BasicTeX
-		          // "--latex-engine=/usr/texbin/pdflatex"
-		          // or on Windows with MiKTeX
-		          // "--latex-engine=C:/Program Files (x86)/MiKTeX 2.9/miktex/bin/pdflatex.exe"
-		          // if -o or --output missing, will write to a temporary file
-		          // "--output=~/Downloads/output.pdf"
-		      ]
+					"--latex-engine=/Library/TeX/texbin/pdflatex"
+				]
+			},
+
+			"PDF TOC (Narrow margins)": {
+				"scope": {
+					"text.html": "html",
+					"text.html.markdown": "markdown",
+				},
+				"pandoc-arguments": [
+					"-V", "geometry:margin=1.25in", 
+					"--latex-engine=/Library/TeX/texbin/pdflatex",
+					"-s", "--toc", "--number-sections", "--parse-raw",
+					"-t", "pdf",
+				],
+			},
+
+			"PDF TOC": {
+				"scope": {
+					"text.html": "html",
+					"text.html.markdown": "markdown",
+				},
+				"pandoc-arguments": [
+					"-s", "--toc", "--number-sections", "--parse-raw",
+					"--latex-engine=/Library/TeX/texbin/pdflatex",
+					"-t", "pdf",
+				],
+			},
+
+			"Beamer Slides (PDF)": {
+				"scope": {
+					"text.html": "html",
+					"text.html.markdown": "markdown",
+				},
+				"out-ext": "pdf",
+				"pandoc-arguments": [
+					"-t", "beamer",
+					"--latex-engine=/Library/TeX/texbin/pdflatex"
+				]
 			}
 		}
 	}
