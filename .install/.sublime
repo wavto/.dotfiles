@@ -1,0 +1,8 @@
+# Sublime Text installation
+# first install package control as described here https://packagecontrol.io/installation
+# and then run this script
+
+
+# Create Sublime Text settings symlink (remove directory first)
+rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+ln -s ~/.sublime/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
