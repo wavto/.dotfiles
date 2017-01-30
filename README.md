@@ -30,22 +30,44 @@ Set your git credentials by copying `.gitconfig.local.sample` to `.gitconfig.loc
 
 ## Setup a new mac
 
-If you are setting up a new mac run this two commands first...
+If you are setting up a new mac run this two commands first
 
 	sudo softwareupdate -i -a
 	xcode-select --install
 
-...follow the [installation instruction above](#installation) and define the computer name...
+generate new ssh-keys
+
+	ssh-keygen -t rsa -b 4096 -C "YOUR EMAIL"
+
+add your key to the ssh-agent
+
+	ssh-add ~/.ssh/{your private key}
+
+copy the key and add it to your github account.
+
+	pbcopy < ~/.ssh/id_rsa.pub
+
+Then follow the [installation instruction above](#installation) and define your computer name
 	
 	export COMPUTER_NAME=my-awesome-computer-name
 
-...then run the installation script...
+run the installation script
 
 	./.install/.install
 
-...or run each script in the `.install/` directory manually...
+or run each script in the `.install/` directory manually
 
-...and restart your mac
+and restart your mac.
+
+---
+
+## Mac App Store
+
+The following apps have to be installed manually through from the App Store
+
+* Microsoft Remote Desktop
+* Wunderlist
+* PasteBox – Clipboard Manager
 
 ---
 
