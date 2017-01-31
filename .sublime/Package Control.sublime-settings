@@ -2,7 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"Dictionaries"
 	],
 	"installed_packages":
 	[
@@ -13,5 +12,9 @@
 		"Package Control",
 		"Pandoc",
 		"Solarized Color Scheme"
+	],
+	"repositories":
+	[
+		"https://github.com/titoBouzout/Dictionaries"
 	]
 }

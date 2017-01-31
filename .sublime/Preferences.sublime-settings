@@ -4,7 +4,6 @@
 	"font_size": 12,
 	"ignored_packages":
 	[
-		"Dictionaries",
 		"Vintage"
 	],
 	"scroll_past_end": true,
