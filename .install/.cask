@@ -1,6 +1,7 @@
 # apps to install
 
 apps=(
+	avast
 	1password
 	basictex
 	dropbox
