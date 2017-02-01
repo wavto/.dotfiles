@@ -16,7 +16,7 @@ COMPOSER_DISABLE_XDEBUG_WARN=1
 plugins=(git chucknorris brew brew-cask composer sudo symfony2 node npm wp-cli)
 
 # set path
-export PATH=/usr/local/texbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.bin:/Library/TeX/texbin
+export PATH=/usr/local/texbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.bin:/Library/TeX/texbin:$HOME/.composer/vendor/bin
 
 # source external config
 source $ZSH/oh-my-zsh.sh
