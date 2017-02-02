@@ -9,3 +9,6 @@
 .sublime/Package Control.ca-certs/
 .sublime/Package Control.last-run
 .sublime/Package Control.cache/
+
+# ignore child repositories
+code
