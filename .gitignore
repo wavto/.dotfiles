@@ -11,4 +11,5 @@
 .sublime/Package Control.cache/
 
 # ignore child repositories
-code
+code/
+wiki/
