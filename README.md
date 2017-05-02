@@ -8,21 +8,23 @@ This is my dotfiles repository. The repository has to be installed directly with
 
 Initialize your $HOME directory to be a new git repository, after them add the remote
 
-	git init
-	git remote add origin git@github.com:avanthay/.dotfiles
-	git fetch
+	git clone --bare git@github.com:avanthay/.dotfiles ~/.dotfiles
+
+Create the alias `dot` to use instead of git for handling with your .dotfiles
+
+	alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 **Backup the existing files** which will be overridden with the ones of this repo, checkout the current version and set the upsteam for the local branch `master`
 
-	git checkout -t origin/master
+	dot checkout -t origin/master
 
-Update the local repository config to hide untracked files when doing `git status`
+Update the local repository config to hide untracked files when doing `dot status`
 
-	git config status.showUntrackedFiles no
+	dot config status.showUntrackedFiles no
 
 Initialize and update the submodules
 
-	git submodule update --init --recursive
+	dot submodule update --init --recursive
 
 Set your git credentials by copying `.gitconfig.local.sample` to `.gitconfig.local` and editing it
 

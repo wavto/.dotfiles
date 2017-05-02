@@ -9,3 +9,4 @@ alias gmt='git mergetool --prompt'
 
 # misc
 alias tmp='cd /tmp'
+alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
