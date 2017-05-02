@@ -6,7 +6,7 @@ This is my dotfiles repository. The repository has to be installed directly with
 
 ## Installation
 
-Initialize your $HOME directory to be a new git repository, after them add the remote
+Clone the .dotfiles as bare repository within your $HOME directory
 
 	git clone --bare git@github.com:avanthay/.dotfiles ~/.dotfiles
 
