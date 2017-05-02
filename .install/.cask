@@ -1,7 +1,7 @@
 # apps to install
 
 apps=(
-	avast
+	avast-mac-security
 	1password
 	basictex
 	dropbox
