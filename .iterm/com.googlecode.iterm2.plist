@@ -271,6 +271,8 @@
 	<false/>
 	<key>HideTab</key>
 	<true/>
+	<key>HideTabNumber</key>
+	<false/>
 	<key>HighlightTabLabels</key>
 	<true/>
 	<key>HotKeyBookmark</key>
@@ -331,9 +333,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1311 700 700 235 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>605 578 918 495 0 0 2560 1417 </string>
+	<string>605 762 770 381 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>935 444 920 552 0 0 2560 1417 </string>
+	<string>802 -354 836 1017 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1867,7 +1869,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-05-04T08:37:18Z</date>
+	<date>2017-05-08T05:26:20Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -1877,7 +1879,7 @@
 	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>ShowPaneTitles</key>
-	<true/>
+	<false/>
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
