@@ -13,7 +13,7 @@ DEFAULT_USER=dave
 COMPOSER_DISABLE_XDEBUG_WARN=1
 
 # oh-my-zsh plugins
-plugins=(git chucknorris brew brew-cask composer sudo symfony2 node npm wp-cli)
+plugins=(git chucknorris brew brew-cask composer sudo symfony2 node npm wp-cli meteor)
 
 # set path
 export PATH=/usr/local/texbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.bin:/Library/TeX/texbin:$HOME/.composer/vendor/bin
