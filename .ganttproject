@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><ganttproject-options version="2.7.2">
+<?xml version="1.0" encoding="UTF-8"?><ganttproject-options version="2.8.4">
     <colors resources="#8cb6ce" resourcesOverload="#e53232" resourcesUnderload="#32e532" weekEnd="#808080" daysOff="#e6ff2b"/>
     <geometry x="4" y="23" width="1436" height="877"/>
     <toolBar position="0" icon-size="16" show="0"/>
@@ -33,10 +33,10 @@
     </view>
     <automatic-launch value="false"/>
     <lockdavminutes value="240"/>
-    <xsl-dir dir="file:/Applications/GanttProject.app/Contents/Java/plugins/net.sourceforge.ganttproject/data/resources/xslt"/>
-    <xsl-fo file="file:/Applications/GanttProject.app/Contents/Java/plugins/net.sourceforge.ganttproject/data/resources/xslfo/ganttproject.xsl"/>
+    <xsl-dir dir="file:/Applications/GanttProject.app/Contents/Java/plugins-2.8.4/ganttproject/data/resources/xslt"/>
+    <xsl-fo file="file:/Applications/GanttProject.app/Contents/Java/plugins-2.8.4/ganttproject/data/resources/xslfo/ganttproject.xsl"/>
     <working-dir dir="/Users/dave"/>
-    <files></files>
+    <files/>
     <roles roleset-name="Default">
         <role id="0" name="undefined"/>
         <role id="1" name="project manager"/>
@@ -54,6 +54,7 @@
     </roles>
     <option id="ui.laf" value="Mac OS X"/>
     <option id="ui.chartFontSpec" value="Dialog-NORMAL"/>
+    <option id="ui.screenDpi" value="96"/>
     <option id="ui.language" value="en"/>
     <option id="ui.ui.dateFormat.switch" value="false"/>
     <option id="ui.ui.dateFormat.short" value="dd.MM.yy"/>
@@ -82,7 +83,7 @@
     <option id="webdav.lockRelease" value="true"/>
     <option id="webdav.proxy" value=""/>
     <option id="updateRss.check" value="YES"/>
-    <option id="updateRss.lastCheck" value="2017-01-29"/>
+    <option id="updateRss.lastCheck" value="2017-05-17"/>
     <configuration>
         <org.ganttproject.impex.htmlpdf>
             <font-substitution/>

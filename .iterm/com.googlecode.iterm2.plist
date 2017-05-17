@@ -335,7 +335,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>605 762 770 381 0 0 2560 1440 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>802 -354 836 1017 0 0 2560 1417 </string>
+	<string>-1676 289 1676 1002 -1680 266 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1869,7 +1869,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-05-08T05:26:20Z</date>
+	<date>2017-05-15T05:29:39Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -1918,6 +1918,10 @@
 	<integer>0</integer>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
 	<string>3.0.15</string>
 </dict>
