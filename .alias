@@ -10,3 +10,10 @@ alias gmt='git mergetool --prompt'
 # misc
 alias tmp='cd /tmp'
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+# alias for node / meteor
+alias n='npm'
+alias nr='npm run'
+alias m='meteor'
+alias mn='meteor npm'
+alias mnr='meteor npm run'
