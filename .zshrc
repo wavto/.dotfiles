@@ -22,7 +22,7 @@ export PATH=/usr/local/texbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/
 source $ZSH/oh-my-zsh.sh
 
 # source the shell dotfiles
-for file in ~/.{alias,function}; do
+for file in ~/.{alias,function,completion/*}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;

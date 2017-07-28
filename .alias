@@ -17,3 +17,6 @@ alias nr='npm run'
 alias m='meteor'
 alias mn='meteor npm'
 alias mnr='meteor npm run'
+
+# alias for parallels
+alias prl='prlctl'
