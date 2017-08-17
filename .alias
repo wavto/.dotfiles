@@ -18,5 +18,9 @@ alias m='meteor'
 alias mn='meteor npm'
 alias mnr='meteor npm run'
 
+# alias for yarn / meteor yarn
+alias y='yarn'
+alias my='meteor yarn'
+
 # alias for parallels
 alias prl='prlctl'
