@@ -253,6 +253,8 @@
 	<false/>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
+	<key>DisableWindowSizeSnap</key>
+	<true/>
 	<key>EnableRendezvous</key>
 	<false/>
 	<key>FocusFollowsMouse</key>
@@ -333,11 +335,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1311 700 700 235 0 0 2560 1417 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>-1411 405 606 456 -1680 266 1680 1027 </string>
+	<string>489 240 606 456 0 0 2560 1440 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1253 738 1018 447 -1680 266 1680 1027 </string>
+	<string>518 601 1018 447 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1676 271 1676 1017 -1680 266 1680 1027 </string>
+	<string>3 5 1914 1047 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1871,7 +1873,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-06-19T05:34:06Z</date>
+	<date>2017-08-17T15:34:42Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
