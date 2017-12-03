@@ -1,7 +1,7 @@
 # apps to install
 
 apps=(
-	avast-mac-security
+	avast-security
 	1password
 	basictex
 	dropbox
@@ -11,14 +11,14 @@ apps=(
 	ganttproject
 	google-chrome
 	google-chrome-canary
-	google-drive
+	google-drive-file-stream
 	iterm2
 	java
 	jetbrains-toolbox
 	mysqlworkbench
 	openoffice
 	opera
-	parallels-desktop
+	parallels
 	poedit
 	sequel-pro
 	skype

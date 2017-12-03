@@ -43,7 +43,6 @@ apps=(
 	ruby-build
 	sqlite
 	ssh-copy-id
-	symfony-installer
 	tree
 	unixodbc
 	wp-cli
@@ -67,6 +66,7 @@ apps=(
 	# php56-xdebug
 	# php56-yaml
 	# subversion
+	# symfony-installer
 
 
 # run the installation
