@@ -16,7 +16,7 @@ Create the alias `dot` to use instead of git for handling with your .dotfiles
 
 **Backup the existing files** which will be overridden with the ones of this repo, checkout the current version and set the upsteam for the local branch `master`
 
-	dot checkout -t origin/master
+	dot checkout
 
 Update the local repository config to hide untracked files when doing `dot status`
 
