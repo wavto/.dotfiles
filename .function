@@ -1,9 +1,14 @@
 # Create a new directory and enter it
 function mkd() {
-	mkdir -p "$@" && cd "$_";
+  mkdir -p "$@" && cd "$_";
 }
 
 # Create a random string
 function rand() {
-	cat /dev/urandom | base64 | tr -dc 'a-zA-Z0-9' | fold -w ${1:-32} | head -n 1;
+  cat /dev/urandom | base64 | tr -dc 'a-zA-Z0-9' | fold -w ${1:-32} | head -n 1;
+}
+
+# ssh as user root
+function @() {
+  ssh "root@$@";
 }
