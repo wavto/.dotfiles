@@ -88,6 +88,14 @@ Homebrew downloads the basictex installer to `/usr/local/Caskroom/basictex/{vers
 
 ---
 
+## Configure PHP
+
+To enable debugging add the following line to the file /usr/local/etc/php/7.0/conf.d/ext-xdebug.ini
+
+	xdebug.remote_enable=1
+
+---
+
 ## Usage
 
 Feel free to use my dotfile repository, ideally you go throught the settings instead of just copying my repos as it is. The usage of this repository is at your own risk!
