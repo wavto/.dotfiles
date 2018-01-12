@@ -6,6 +6,7 @@ alias glo='git log --pretty="format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN
 alias glot='glo --since=0am'
 alias gt='git tag'
 alias gmt='git mergetool --prompt'
+alias gds='git diff --stat'
 
 # misc
 alias tmp='cd /tmp'
