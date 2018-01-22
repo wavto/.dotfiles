@@ -3,6 +3,7 @@ alias a='alias'
 
 # git aliases
 alias glo='git log --pretty="format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s" --date=iso8601 --graph'
+alias gloa='glo --all'
 alias glot='glo --since=0am'
 alias gt='git tag'
 alias gmt='git mergetool --prompt'
