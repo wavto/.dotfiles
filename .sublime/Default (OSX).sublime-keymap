@@ -5,7 +5,6 @@
 	{ "keys": ["super+alt+up"], "command": "duplicate_line" },
 	{ "keys": ["alt+up"], "command": "swap_line_up" },
 	{ "keys": ["alt+down"], "command": "swap_line_down" },
-	{ "keys": ["super+7"], "command": "toggle_comment", "args": { "block": false } },
-	{ "keys": ["super+alt+7"], "command": "toggle_comment", "args": { "block": true } },
-	{ "keys": ["alt+shift+f"], "command": "reindent", "args": { "single_line": false } }
+	{ "keys": ["command+shift+f"], "command": "reindent", "args": { "single_line": false } },
+	{ "keys": ["ctrl+shift+f"], "command": "show_panel", "args": {"panel": "find_in_files"} }
 ]
