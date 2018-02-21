@@ -15,3 +15,5 @@
     tool = jet
 [difftool "jet"]
     cmd = /usr/local/bin/jet diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
+[color "diff"]
+    meta = reverse
