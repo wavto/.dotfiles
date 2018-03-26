@@ -26,3 +26,7 @@ alias my='meteor yarn'
 
 # alias for parallels
 alias prl='prlctl'
+
+# docker aliases
+alias dr='docker run --rm'
+alias dri='docker run --rm -t -i'
