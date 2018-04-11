@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Dictionaries",
+		"Dockerfile Syntax Highlighting",
 		"GitGutter",
 		"Markdown Preview",
 		"Monokai Extended",
