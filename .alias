@@ -30,3 +30,6 @@ alias prl='prlctl'
 # docker aliases
 alias dr='docker run --rm'
 alias dri='docker run --rm -t -i'
+
+# tree alias
+alias lt='tree -I "node_modules|.git|.idea" -a'
