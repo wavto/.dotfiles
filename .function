@@ -12,3 +12,13 @@ function rand() {
 function @() {
   ssh "root@$@";
 }
+
+# docker build a directory with a 'Dockerfile' inside.
+function db() {
+  [ -z ${1} ] && echo "please provide at least a directory path, optionally an image name" \
+              && return 1
+  [ '.' = ${1} ] && 1=$(pwd)
+  image=${2:-$(basename ${1})}
+  echo "building container ${image}"
+  docker build --tag ${image}:latest --tag ${image}:$(date +%Y%m%d%H%M) ${1}
+}
