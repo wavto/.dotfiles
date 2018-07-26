@@ -1,5 +1,6 @@
 # alias for reading aliases
 alias a='alias'
+alias aa='source ~/.alias'
 
 # git aliases
 alias glo='git log --graph'
@@ -28,8 +29,13 @@ alias my='meteor yarn'
 alias prl='prlctl'
 
 # docker aliases
+alias d='docker'
 alias dr='docker run --rm'
 alias dri='docker run --rm -t -i'
+alias di='docker image'
+alias dis='docker images'
+alias dp='docker ps'
+alias dpa='docker ps --all'
 
 # tree alias
 alias lt='tree -I "node_modules|.git|.idea" -a'
