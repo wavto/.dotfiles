@@ -38,4 +38,4 @@ alias dp='docker ps'
 alias dpa='docker ps --all'
 
 # tree alias
-alias lt='tree -I "node_modules|.git|.idea" -a'
+alias lt='tree -I "node_modules|.git|.idea|.meteor" -a'
