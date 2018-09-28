@@ -10,7 +10,7 @@ function rand() {
 
 # ssh as user root
 function @() {
-  ssh -A "root@$@";
+  ssh "root@$@";
 }
 
 # docker build a directory with a 'Dockerfile' inside.
