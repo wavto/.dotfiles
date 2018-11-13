@@ -1,11 +1,11 @@
 # This is Git's per-user configuration file.
 [include]
-	path = ~/.gitconfig.local
+    path = ~/.gitconfig.local
 [push]
-	default = matching
+    default = matching
 [core]
-	excludesfile = ~/.gitignore_global
-	autocrlf = input
+    excludesfile = ~/.gitignore_global
+    autocrlf = input
 [merge]
     tool = jet
 [mergetool "jet"]
@@ -22,7 +22,7 @@
 [format]
     pretty = format:"%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s"
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
