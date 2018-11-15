@@ -2,7 +2,7 @@
 [include]
     path = ~/.gitconfig.local
 [push]
-    default = matching
+    default = simple
 [core]
     excludesfile = ~/.gitignore_global
     autocrlf = input
