@@ -7,7 +7,7 @@ alias glo='git log --graph'
 alias gloa='glo --all'
 alias glot='glo --since=0am'
 alias gt='git tag'
-alias gm='git merge --no-ff'
+alias gmn='git merge --no-ff'
 alias gmt='git mergetool --prompt'
 alias gds='git diff --stat'
 
