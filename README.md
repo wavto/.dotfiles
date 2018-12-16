@@ -1,10 +1,12 @@
 # .dotfiles
 
-This is my dotfiles repository. The repository has to be installed directly within the $HOME directory of a macOS environment.
+This is my dotfiles repository. The repository needs to be installed directly within the $HOME directory of a macOS environment.
 
 ---
 
-## Installation
+## Install
+
+### .dotfiles
 
 Clone the .dotfiles as bare repository within your $HOME directory
 
@@ -28,79 +30,152 @@ Initialize and update the submodules
 
 Set your git credentials by copying `.gitconfig.local.sample` to `.gitconfig.local` and editing it
 
----
+### Setup a new Mac
 
-## Setup a new mac
+Set the hostname in `System preferences` > `Sharing`
 
-If you are setting up a new mac run this two commands first
+Disable Guest Account in `System preferences` > `Users and Groups`
+
+Enable harddisk encryption and the Firewall in `System preferences` > `Security and Confidentiality`
+
+Check the remaining `System preferences`, maybe check the screenshots at `.dot/config/macOS`
+	
+Enable developer tools
 
 	sudo softwareupdate -i -a
 	xcode-select --install
 
-generate new ssh-keys
+Reboot your Mac
 
-	ssh-keygen -t rsa -b 4096 -C "YOUR EMAIL"
+### SSH
 
-add your key to the ssh-agent
+Install your SSH key pair into `~/.ssh`
 
-	ssh-add ~/.ssh/{your private key}
+Start the SSH agent in background
 
-copy the key and add it to your github account.
+	eval "$(ssh-agent -s)"
 
-	pbcopy < ~/.ssh/id_rsa.pub
+Add your key to the ssh-agent
 
-Then follow the [installation instruction above](#installation) and define your computer name
+	ssh-add -K ~/.ssh/{your private key}
+
+### Homebrew
+
+Install Homebrew
+
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Install Homebrew Taps
+	brew tap homebrew/cask
+	brew tap homebrew/cask-versions
+	brew tap homebrew/completions
+	brew tap homebrew/core
+	brew tap homebrew/dupes
+	brew tap homebrew/services
+	brew tap homebrew/versions
 	
-	export COMPUTER_NAME=my-awesome-computer-name
+Update & upgrade Homebrew
 
-run the installation script
+	brew update
+	brew upgrade
 
-	./.install/.install
+### iTerm 2
 
-or run each script in the `.install/` directory manually
+Install iTerm 2
 
-and restart your mac.
+	brew cask install iterm2
 
----
+Set custom preferences folder
 
-## Mac App Store
+	defaults write com.googlecode.iterm2 PrefsCustomFolder -string ~/.iterm/
 
-The following apps have to be installed manually through from the App Store
+### Oh-My-ZSH
 
-* Microsoft Remote Desktop
-* Wunderlist
-* PasteBox – Clipboard Manager
+Oh-My-ZSH gets installed with `.dotfiles` (submodule)
 
----
+Install ZSH autocompletion
 
-## Configure Sublime Text settings
+	brew install zsh-completions
 
-First install the package control as [described here](https://packagecontrol.io/installation) by pasting the code there into the sublime console. Then run the following commands to remove the settings directory and symlink it to ´~/.sublime` instead
+Change default shell to zsh
+
+	chsh -s /bin/zsh
+
+Install powerline fonts needed for the oh-my-zsh theme agnoster
+	git clone git@github.com:powerline/fonts /tmp/fonts
+	/tmp/fonts/install.sh
+	rm -r /tmp/fonts
+
+### Sublime Text
+
+Install Sublime Text
+
+	brew cask info sublime-text
+
+Install the package control as [described here](https://packagecontrol.io/installation) by pasting the code there into the sublime console.
+
+Run the following commands to remove the settings directory and symlink it to ´~/.sublime` instead
 
 	rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 	ln -s ~/.sublime/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
----
+### Spectacle
 
-## Install LaTex
+Install
+
+	brew cask install spectacle
+
+Install shortcuts
+
+	cp ~/.dot/config/Spectacle/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
+
+### FireFox
+
+Install Firefox (develper edition + normal)
+
+	brew cask install firefoxdeveloperedition
+	brew cask install firefox
+
+Link the `user.js` file to the Firefox profile directories. Replace `{profile}` with your profile directory and repeat for each profile.
+
+	ln -s ~/.dot/config/Firefox/user.js ~/Library/Application\ Support/Firefox/Profiles/{profile}/user.js
+
+### Mac App Store
+
+Installed those Apps manually from the App Store
+
+* Microsoft Remote Desktop
+* Wunderlist
+* PasteBox – Clipboard Manager
+* Blinks
+
+### LaTex
+
+Install BasicTex
+
+	brew cask install basictex
 
 Homebrew downloads the basictex installer to `/usr/local/Caskroom/basictex/{version}/mactex-basictex-{version}.pkg`. Run it with the `open` command and follow the screen instructions.
 
----
+### PHP
 
-## Configure PHP
+Add the Homebrew tap
+
+	brew tap homebrew/php
+	brew tap kyslik/php
+
+Install the PHP packages
+
+	brew install composer
+	brew install php70
+	brew install php70-apcu
+	brew install php70-opcache
+	brew install php70-xdebug
+	brew install php70-yaml
 
 To enable debugging add the following line to the file /usr/local/etc/php/7.0/conf.d/ext-xdebug.ini
 
 	xdebug.remote_enable=1
-
----
-
-## FireFox
-
-Link `user.js` to the Firefox profile directory. Replace `{profile}` with your profile directory.
-
-	ln -s ~/.dot/config/Firefox/user.js ~/Library/Application\ Support/Firefox/Profiles/{profile}/user.js
 
 ---
 

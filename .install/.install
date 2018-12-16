@@ -1,8 +1,0 @@
-~/.install/.package-manager
-~/.install/.tap
-~/.install/.brew
-~/.install/.cask
-~/.install/.macos
-~/.install/.custom-app
-
-echo 'Installation successful. Please follow the instruction for the manual configuration of sublime text in ~/.install/.sublime'
