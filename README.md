@@ -127,6 +127,22 @@ Run the following commands to remove the settings directory and symlink it to ´
 	rm -rf ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 	ln -s ~/.sublime/ ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 
+You may want to install Pandoc for Markup conversion
+
+### Pandoc
+
+Install Pandoc (needed for the Sublime Text extention)
+
+	brew install pandoc
+
+For pandoc to work, you need to install LaTex
+
+### LaTex
+
+Install BasicTex
+
+	brew cask install basictex
+
 ### Spectacle
 
 Install
@@ -156,14 +172,6 @@ Installed those Apps manually from the App Store
 * Wunderlist
 * PasteBox – Clipboard Manager
 * Blinks
-
-### LaTex
-
-Install BasicTex
-
-	brew cask install basictex
-
-Homebrew downloads the basictex installer to `/usr/local/Caskroom/basictex/{version}/mactex-basictex-{version}.pkg`. Run it with the `open` command and follow the screen instructions.
 
 ### PHP
 
