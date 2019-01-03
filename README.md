@@ -173,6 +173,12 @@ Installed those Apps manually from the App Store
 * PasteBox – Clipboard Manager
 * Blinks
 
+### Quicklook
+
+Install
+
+	brew cask install qlmarkdown quicklook-csv quicklook-json
+
 ### PHP
 
 Add the Homebrew tap
