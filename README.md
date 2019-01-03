@@ -8,6 +8,8 @@ This is my dotfiles repository. The repository needs to be installed directly wi
 
 ### .dotfiles
 
+Requires SSH to work, see [SSH](#SSH).
+
 Clone the .dotfiles as bare repository within your $HOME directory
 
 	git clone --bare git@github.com:avanthay/.dotfiles ~/.dotfiles
@@ -30,6 +32,8 @@ Initialize and update the submodules
 
 Set your git credentials by copying `.gitconfig.local.sample` to `.gitconfig.local` and editing it
 
+It may be a good idea to reboot your mac.
+
 ### Setup a new Mac
 
 Set the hostname in `System preferences` > `Sharing`
@@ -44,8 +48,6 @@ Enable developer tools
 
 	sudo softwareupdate -i -a
 	xcode-select --install
-
-Reboot your Mac
 
 ### SSH
 
@@ -66,6 +68,7 @@ Install Homebrew
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 Install Homebrew Taps
+
 	brew tap homebrew/cask
 	brew tap homebrew/cask-versions
 	brew tap homebrew/completions
@@ -79,15 +82,19 @@ Update & upgrade Homebrew
 	brew update
 	brew upgrade
 
-### iTerm 2
+### iTerm2
 
-Install iTerm 2
+Install iTerm2
 
 	brew cask install iterm2
 
 Set custom preferences folder
 
 	defaults write com.googlecode.iterm2 PrefsCustomFolder -string ~/.iterm/
+
+Open the iTerm2 settings and check `Load preferences from a custom...`, make sure to uncheck `Save changes ... when iTerm2 quits`.
+
+Quit iTerm2 and restart it. You may need to close the window / quit iTerm2 multiple times until the oh-my-zsh theme gets displayed correctly.
 
 ### Oh-My-ZSH
 
@@ -129,7 +136,7 @@ Install shortcuts
 
 	cp ~/.dot/config/Spectacle/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
 
-### FireFox
+### Firefox
 
 Install Firefox (develper edition + normal)
 
