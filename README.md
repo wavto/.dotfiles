@@ -109,6 +109,7 @@ Change default shell to zsh
 	chsh -s /bin/zsh
 
 Install powerline fonts needed for the oh-my-zsh theme agnoster
+
 	git clone git@github.com:powerline/fonts /tmp/fonts
 	/tmp/fonts/install.sh
 	rm -r /tmp/fonts
