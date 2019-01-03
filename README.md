@@ -118,7 +118,7 @@ Install powerline fonts needed for the oh-my-zsh theme agnoster
 
 Install Sublime Text
 
-	brew cask info sublime-text
+	brew cask install sublime-text
 
 Install the package control as [described here](https://packagecontrol.io/installation) by pasting the code there into the sublime console.
 
