@@ -13,7 +13,7 @@ DEFAULT_USER=dave
 COMPOSER_DISABLE_XDEBUG_WARN=1
 
 # oh-my-zsh plugins
-plugins=(git chucknorris brew brew-cask composer sudo symfony2 node npm wp-cli meteor docker encode64)
+plugins=(git chucknorris brew brew-cask composer sudo symfony2 node npm wp-cli meteor docker encode64 zsh_reload)
 
 # set path
 export PATH=/usr/local/php5/bin:/usr/local/texbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.bin:/Library/TeX/texbin:$HOME/.composer/vendor/bin
@@ -39,3 +39,7 @@ source "$HOME/.console/console.rc" 2>/dev/null
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# add nvm (Node Version Manager)
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
