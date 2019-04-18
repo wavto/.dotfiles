@@ -27,14 +27,6 @@ for file in ~/.{alias,function,completion/*}; do
 done;
 unset file;
 
-# add drupal completion
-source "$HOME/.console/console.rc" 2>/dev/null
-
-# add drush completion
-# autoload bashcompinit
-# bashcompinit
-# source /usr/local/Cellar/drush/8.1.3/etc/bash_completion.d/drush
-
 # add ruby stuff
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
