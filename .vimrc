@@ -5,3 +5,4 @@ colorscheme solarized
 " disable the default recording map
 map q <Nop>
 set expandtab
+set ignorecase
