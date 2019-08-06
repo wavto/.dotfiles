@@ -41,3 +41,6 @@ alias dpa='docker ps --all'
 # tree alias
 alias lt='tree -I "node_modules|.git|.idea|.meteor" -a'
 alias lta='tree -I "node_modules|.git|.idea|.meteor|app" -a'
+
+# vpn alias
+alias vpneth='sudo openconnect --authgroup staff-net -u avdavid@staff-net.ethz.ch sslvpn.ethz.ch'
