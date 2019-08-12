@@ -3,50 +3,67 @@
   // use "default" in your user settings file, the default settings will be
   // overwritten, but if you use "user" your settings will be merged into the
   // default settings.
-	"default": {
-		"pandoc-path": "/usr/local/bin/pandoc",
-		"transformations": {
+  "default": {
+  	"pandoc-path": "/usr/local/bin/pandoc",
+  	"transformations": {
 
-			"PDF": {
-				"scope": {
-					"text.html": "html",
-					"text.html.markdown": "markdown"
-				},
-				"pandoc-arguments": [
-					"-t", "pdf",
-					// "-V", "geometry:bmargin=1in",
-					"-V", "geometry:margin=1in",
-					"-V", "fontsize=10pt",
-					"-V", "papersize=a4",
-					// "-V", "pagenumbering=gobble",
+  		"PDF": {
+  			"scope": {
+  				"text.html": "html",
+  				"text.html.markdown": "markdown"
+  			},
+  			"pandoc-arguments": [
+  				"-t", "pdf",
+				// "-V", "geometry:bmargin=1in",
+				"-V", "geometry:margin=1in",
+				"-V", "fontsize=10pt",
+				"-V", "papersize=a4",
+				// "-V", "pagenumbering=gobble",
 				]
-			},
+  		},
 
-			"PDF TOC": {
-				"scope": {
-					"text.html": "html",
-					"text.html.markdown": "markdown",
-				},
-				"pandoc-arguments": [
-					"-t", "pdf",
-					"-V", "geometry:margin=1in",
-					"-V", "fontsize=10pt",
-					"-V", "papersize=a4",
-					"-s", "--toc", "--number-sections",
-				],
-			},
-
-			"Beamer Slides (PDF)": {
-				"scope": {
-					"text.html": "html",
-					"text.html.markdown": "markdown",
-				},
-				"out-ext": "pdf",
-				"pandoc-arguments": [
-					"-t", "beamer",
+  		"Eisvogel PDF": {
+  			"scope": {
+  				"text.html": "html",
+  				"text.html.markdown": "markdown"
+  			},
+  			"pandoc-arguments": [
+  				"-t", "pdf",
+				"-V", "extendedchars=true",
+				"-V", "toc-own-page=true",
+				"--template", "eisvogel",
+				"--listings",
+				"--number-sections",
+				// TODO try this for emojis to work https://github.com/alecjacobson/coloremoji.sty
+				"--pdf-engine=xelatex",
 				]
-			}
-		},
-	    "pandoc-format-file": ["docx", "epub", "pdf", "odt", "beamer"],
-	}
+  		},
+
+  		"PDF TOC": {
+  			"scope": {
+  				"text.html": "html",
+  				"text.html.markdown": "markdown",
+  			},
+  			"pandoc-arguments": [
+  				"-t", "pdf",
+  				"-V", "geometry:margin=1in",
+  				"-V", "fontsize=10pt",
+  				"-V", "papersize=a4",
+  				"-s", "--toc", "--number-sections",
+  			],
+  		},
+
+  		"Beamer Slides (PDF)": {
+  			"scope": {
+  				"text.html": "html",
+  				"text.html.markdown": "markdown",
+  			},
+  			"out-ext": "pdf",
+  			"pandoc-arguments": [
+  				"-t", "beamer",
+  			]
+  		}
+  	},
+  	"pandoc-format-file": ["docx", "epub", "pdf", "odt", "beamer"],
+  }
 }
