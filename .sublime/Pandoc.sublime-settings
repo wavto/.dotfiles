@@ -19,7 +19,7 @@
 				"-V", "fontsize=10pt",
 				"-V", "papersize=a4",
 				// "-V", "pagenumbering=gobble",
-				]
+      ]
   		},
 
   		"Eisvogel PDF": {
@@ -29,41 +29,71 @@
   			},
   			"pandoc-arguments": [
   				"-t", "pdf",
-				"-V", "extendedchars=true",
-				"-V", "toc-own-page=true",
-				"--template", "eisvogel",
-				"--listings",
-				"--number-sections",
+          "-V", "extendedchars=true",
+          "-V", "toc-own-page=true",
+          "--template", "eisvogel",
+          "--listings",
+          "--number-sections",
 				// TODO try this for emojis to work https://github.com/alecjacobson/coloremoji.sty
 				// "--pdf-engine=xelatex",
-				]
+      ]
   		},
 
-  		"PDF TOC": {
-  			"scope": {
-  				"text.html": "html",
-  				"text.html.markdown": "markdown",
-  			},
-  			"pandoc-arguments": [
-  				"-t", "pdf",
-  				"-V", "geometry:margin=1in",
-  				"-V", "fontsize=10pt",
-  				"-V", "papersize=a4",
-  				"-s", "--toc", "--number-sections",
-  			],
-  		},
+      "Eisvogel PDF (no numbering)": {
+        "scope": {
+          "text.html": "html",
+          "text.html.markdown": "markdown"
+        },
+        "pandoc-arguments": [
+          "-t", "pdf",
+          "-V", "extendedchars=true",
+          "-V", "toc-own-page=true",
+          "--template", "eisvogel",
+          "--listings",
+        ]
+      },
 
-  		"Beamer Slides (PDF)": {
-  			"scope": {
-  				"text.html": "html",
-  				"text.html.markdown": "markdown",
-  			},
-  			"out-ext": "pdf",
-  			"pandoc-arguments": [
-  				"-t", "beamer",
-  			]
-  		}
-  	},
-  	"pandoc-format-file": ["docx", "epub", "pdf", "odt", "beamer"],
+      "Reveal.js": {
+        "scope": {
+          "text.html": "html",
+          "text.html.markdown": "markdown"
+        },
+        // "out-local": trueo,
+        "pandoc-arguments": [
+          "-t", "revealjs",
+          "-s",
+          "-V", "revealjs-url=https://revealjs.com",
+          "--slide-level", "2",
+          // "--self-contained",
+          "-o", "slides.html"
+        ]
+      },
+
+      "PDF TOC": {
+       "scope": {
+        "text.html": "html",
+        "text.html.markdown": "markdown",
+      },
+      "pandoc-arguments": [
+        "-t", "pdf",
+        "-V", "geometry:margin=1in",
+        "-V", "fontsize=10pt",
+        "-V", "papersize=a4",
+        "-s", "--toc", "--number-sections",
+      ],
+    },
+
+    "Beamer Slides (PDF)": {
+     "scope": {
+      "text.html": "html",
+      "text.html.markdown": "markdown",
+    },
+    "out-ext": "pdf",
+    "pandoc-arguments": [
+      "-t", "beamer",
+    ]
   }
+},
+"pandoc-format-file": ["docx", "epub", "pdf", "odt", "beamer"],
+}
 }
