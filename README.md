@@ -49,6 +49,8 @@ Enable developer tools
 	sudo softwareupdate -i -a
 	xcode-select --install
 
+Disable accented characters when holding down a key with `defaults write -g ApplePressAndHoldEnabled -bool false`
+
 ### SSH
 
 Install your SSH key pair into `~/.ssh`
