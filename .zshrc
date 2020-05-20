@@ -34,4 +34,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # nvm needs to be loaded manually with the nvm() function
 # improving the terminal performance
 # add the default node version to path, allowing to use it everywhere
-PATH=/Users/dave/.nvm/versions/node/v8.15.1/bin/:${PATH}
+PATH=/Users/dave/.nvm/versions/node/v12.16.1/bin/:${PATH}
