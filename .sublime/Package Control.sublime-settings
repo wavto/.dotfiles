@@ -5,18 +5,22 @@
 	],
 	"installed_packages":
 	[
+		"ColorPick",
 		"Dictionaries",
 		"Dockerfile Syntax Highlighting",
+		"Generate Password",
 		"GitGutter",
 		"MarkdownPreview",
 		"Monokai Extended",
 		"Package Control",
 		"Pandoc",
+		"Random Everything",
 		"Solarized Color Scheme",
-		"Terminal"
+		"Terminal",
+		"testNameGenerator",
 	],
 	"repositories":
 	[
 		"https://github.com/titoBouzout/Dictionaries"
-	]
+	],
 }
