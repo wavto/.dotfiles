@@ -166,14 +166,20 @@ Link the `user.js` file to the Firefox profile directories. Replace `{profile}` 
 
 	ln -s ~/.dot/config/Firefox/user.js ~/Library/Application\ Support/Firefox/Profiles/{profile}/user.js
 
+### Caffeine
+
+        brew cask install caffeine
+
 ### Mac App Store
 
 Installed those Apps manually from the App Store
 
-* Microsoft Remote Desktop
-* Wunderlist
 * PasteBox – Clipboard Manager
-* Blinks
+* OneDrive
+* Google Drive
+* Brave Browser
+* NotePlan 3
+* Notion
 
 ### Quicklook
 
