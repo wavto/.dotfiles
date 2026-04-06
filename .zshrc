@@ -13,7 +13,7 @@ DEFAULT_USER=dave
 COMPOSER_DISABLE_XDEBUG_WARN=1
 
 # oh-my-zsh plugins
-plugins=(git chucknorris brew composer sudo symfony2 node npm wp-cli meteor docker encode64 zsh_reload)
+plugins=(git brew composer sudo symfony2 node npm wp-cli meteor docker encode64)
 
 # set path
 export PATH=/usr/local/php5/bin:/usr/local/texbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.bin:/Library/TeX/texbin:$HOME/.composer/vendor/bin
@@ -34,4 +34,4 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # nvm needs to be loaded manually with the nvm() function
 # improving the terminal performance
 # add the default node version to path, allowing to use it everywhere
-PATH=/Users/dave/.nvm/versions/node/v12.16.1/bin/:${PATH}
+PATH=/Users/dave/.nvm/versions/node/v12.16.1/bin/:/opt/homebrew/bin:/Users/dave:${PATH}
