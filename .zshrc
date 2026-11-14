@@ -35,3 +35,11 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # improving the terminal performance
 # add the default node version to path, allowing to use it everywhere
 PATH=/Users/dave/.nvm/versions/node/v12.16.1/bin/:/opt/homebrew/bin:/Users/dave:${PATH}
+
+# brew zsh completions
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
